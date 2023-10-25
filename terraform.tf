@@ -19,7 +19,7 @@ provider "aws" {
 }
 
 #create ec2 instance
-take ami id of ubuntu(or any machine) in t2 micro and paste it
+#take ami id of ubuntu(or any machine) in t2 micro and paste it
 resource "aws_instance" "s1" {
   ami           = "ami-0f5ee92e2d63afc18"
   instance_type = "t2.micro"
