@@ -47,8 +47,6 @@ resource "aws_subnet" "name-of-subnet" {
   }
 }
 
-terraform apply
-
 #create internat gateway
 resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.name-of-vpc.id
